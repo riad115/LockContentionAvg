@@ -1,0 +1,4 @@
+LockContentionAvg
+=================
+
+Average calculation
