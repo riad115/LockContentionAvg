@@ -19,7 +19,7 @@ public class LockContentionAvg {
 	public static HashMap<Integer, Double> threadTime = new HashMap<Integer, Double>();
 	public static List<String> headers = new ArrayList<String>();
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Agenerated method stub
 		//String inputFileName = args[0];
 		//System.out.println("Input file: " + inputFileName);
 		//readInputFile(inputFileName);
