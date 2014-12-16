@@ -237,13 +237,14 @@ public static void printWaitTime(){
 	//System.out.println(waitTimeThread.values());
 	//iterating over keys only
 	int value;
-	//long maxWaitTime=0;
+	long WaitTime=0;
 	//long maxContThread=0;
 	//unsorted Thread Average wait time
-	/*for (Long key : waitTimeThread.keySet()) {
-	    value=threadIdunLock.get(key);
-		System.out.println("Thread: " + key +" Avg. waiting time: "+ ((double) waitTimeThread.get(key)/(double) value));
-	}*/
+	for (Long key : waitTimeThread.keySet()) {
+		WaitTime=WaitTime+waitTimeThread.get(key);
+		
+	}
+	System.out.println("Avg. waiting time : "+ ((double) WaitTime/(double) unlocks.size()));
 	
 	int i =0;
 	HashMap<Long, Long> waitTimeThreadSorted = sortByKey(waitTimeThread);
