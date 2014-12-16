@@ -29,13 +29,15 @@ public class LockContentionAvg {
 			readInputFile(inputFileName);
 		}
 		
+		String inputFileName = args[10];
 		//System.out.println(lockContention.keySet());
 		//System.out.println(lockContention.values());
 		//System.out.println(threadTime.keySet());
 		//System.out.println(threadTime.values());
 		
 		try {
-			BufferedWriter br = new BufferedWriter(new FileWriter("C:\\Users\\Stigmatized\\Desktop\\canneal.csv"));
+			//BufferedWriter br = new BufferedWriter(new FileWriter("C:\\Users\\Stigmatized\\Desktop\\canneal.csv"));
+			BufferedWriter br = new BufferedWriter(new FileWriter(inputFileName));
 			StringBuilder sb = new StringBuilder();
 			Double value;
 			headers = Collections.list(Collections.enumeration(lockContention.keySet()));
